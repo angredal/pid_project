@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: dictionary-service-impl
+  datasource:

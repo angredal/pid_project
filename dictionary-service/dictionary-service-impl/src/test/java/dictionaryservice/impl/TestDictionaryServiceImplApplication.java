@@ -1,4 +1,4 @@
-package dictionaryservice.dictionaryserviceimpl;
+package dictionaryservice.impl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.TestConfiguration;
