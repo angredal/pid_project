@@ -5,8 +5,19 @@ import lombok.Data;
 
 @Data
 public class WeatherDto {
-    @JsonProperty("temp_c")
-    private int temperature;
-    @JsonProperty("name")
-    private String cityName;
+    @JsonProperty("location")
+    private Location location;
+    @JsonProperty("current")
+    private Current current;
+    @Data
+    private static class Location {
+        @JsonProperty("name")
+        private String cityName;
+        @JsonProperty("country")
+        private String countryName;
+    }
+    private static class Current {
+        @JsonProperty("temp_c")
+        private int temp;
+    }
 }
