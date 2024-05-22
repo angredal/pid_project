@@ -12,7 +12,8 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class RatingScaleDomain {
+public class RatingScaleDomainService {
+
     private final RatingScaleDao ratingScaleDao;
 
 

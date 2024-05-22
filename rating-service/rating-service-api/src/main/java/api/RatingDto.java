@@ -2,14 +2,15 @@ package api;
 
 
 import lombok.Data;
+import lombok.Value;
 
 import java.util.UUID;
 
-@Data
+@Value
 public class RatingDto {
 
-    private UUID id;
-    private String rating;
-    private int position;
+     UUID id;
+     String rate;
+     int position;
 
 }

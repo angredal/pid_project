@@ -1,12 +1,12 @@
 package api.dto;
 
-import lombok.Data;
+import lombok.Value;
 
 import java.util.UUID;
 
-@Data
+@Value
 public class RatingScaleDto {
-    private UUID uuid;
-    private int degree;
-    private String rating;
+     UUID uuid;
+     int degree;
+     String rating;
 }

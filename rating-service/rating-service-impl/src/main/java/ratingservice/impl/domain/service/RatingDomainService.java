@@ -12,7 +12,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class RatingDomain {
+public class RatingDomainService {
     private final RatingDao ratingDao;
 
     @Nullable
@@ -20,7 +20,7 @@ public class RatingDomain {
         return ratingDao.findById(uuid).orElse(null);
     }
 
-    public List<Rating> getAllRatings() {
+    public List<Rating> findAll() {
         return ratingDao.findAll();
     }
 

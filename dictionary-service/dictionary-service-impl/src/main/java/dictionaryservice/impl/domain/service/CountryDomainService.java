@@ -12,7 +12,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class CountryDomain {
+public class CountryDomainService {
     private final CountryDao countryDao;
 
 

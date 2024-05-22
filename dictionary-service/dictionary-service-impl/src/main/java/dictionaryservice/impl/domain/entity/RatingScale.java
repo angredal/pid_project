@@ -23,7 +23,7 @@ public class RatingScale {
     private UUID uuid;
 
     @Column(name = "degree", nullable = false)
-    private int degree;
+    private Integer degree;
     @Column(name = "rating", nullable = false)
     private String rating;
 }
