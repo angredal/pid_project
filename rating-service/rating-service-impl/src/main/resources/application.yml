@@ -1,11 +1,11 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/dictionary_db
+    url: jdbc:postgresql://localhost:5432/rating_db
     username: postgres
     password: postgres
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
   application:
-    name: dictionary-service
+    name: rating-service

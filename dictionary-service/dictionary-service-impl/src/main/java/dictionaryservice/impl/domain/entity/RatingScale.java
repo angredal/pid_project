@@ -1,32 +1,29 @@
 package dictionaryservice.impl.domain.entity;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.UUID;
 
-
-@Table(name = "country", schema = "countries")
 @Entity
+@Table(name = "rating", schema = "rating_scale")
 @Getter
-@AllArgsConstructor
+@Setter
 @NoArgsConstructor
-public class Country {
-
+@AllArgsConstructor
+public class RatingScale {
     @Id
     private UUID uuid;
 
-    private String name;
-
-    private String capitalName;
-
-    private String isoCode;
-
-
-
+    @Column(name = "degree", nullable = false)
+    private int degree;
+    @Column(name = "rating", nullable = false)
+    private String rating;
 }

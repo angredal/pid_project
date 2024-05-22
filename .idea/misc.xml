@@ -9,11 +9,12 @@
         <option value="$PROJECT_DIR$/dictionary-service/dictionary-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/rating-service/rating-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/integrations/pom.xml" />
+        <option value="$PROJECT_DIR$/integrations/weather-integration-impl/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
