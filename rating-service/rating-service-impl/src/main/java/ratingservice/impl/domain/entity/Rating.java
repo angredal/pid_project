@@ -21,8 +21,8 @@ import java.util.UUID;
 public class Rating {
     @Id
     private UUID id;
-    @Column (name = "rating")
-    private String rating;
-    @Column (name = "position")
+    @Column(name = "rating")
+    private String rate;
+    @Column(name = "position")
     private int position;
 }

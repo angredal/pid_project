@@ -26,6 +26,6 @@ public class RatingController {
     }
     @GetMapping("/all")
     public ResponseEntity<List<RatingDto>> getAll(){
-        return new ResponseEntity<>(ratingFacade.getAllRatings(), HttpStatus.OK);
+        return new ResponseEntity<>(ratingFacade.findAll(), HttpStatus.OK);
     }
 }
